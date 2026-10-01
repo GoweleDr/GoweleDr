@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coder Dav — Frontend Developer, UI/UX & Graphic Designer</title>
+    <meta
+      name="description"
+      content="Coder Dav is a Tanzania-based Frontend Web Developer, UI/UX Designer and Graphic Designer crafting clean, fast and beautiful digital experiences with HTML, CSS, JavaScript, React, Figma and Photoshop."
+    />
+    <meta property="og:title" content="Coder Dav — Portfolio" />
+    <meta property="og:description" content="Frontend Developer · UI/UX Designer · Graphic Designer" />
+    <meta property="og:image" content="assets/profile.jpg" />
+    <meta name="theme-color" content="#0b0b10" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23c8ff3d'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='900' text-anchor='middle' fill='%230b0b10'>D</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#home" class="logo" aria-label="Coder Dav home">
+          <span class="logo__mark">D</span>
+          <span class="logo__text">coder<span>.dav</span></span>
+        </a>
+
+        <nav class="nav__links" id="navLinks" aria-label="Primary">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#services" class="nav__link">Services</a>
+          <a href="#skills" class="nav__link">Skills</a>
+          <a href="#work" class="nav__link">Work</a>
+          <a href="#process" class="nav__link">Process</a>
+          <a href="#contact" class="nav__link">Contact</a>
+          <a href="#contact" class="btn btn--primary nav__cta-mobile">Hire Me</a>
+        </nav>
+
+        <div class="nav__actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn--primary btn--sm nav__cta magnetic">Hire Me</a>
+          <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="blob blob--1"></div>
+          <div class="blob blob--2"></div>
+          <div class="grid-lines"></div>
+        </div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <div class="status reveal">
+              <span class="status__dot"></span>
+              Available for freelance, internships &amp; junior roles
+            </div>
+
+            <h1 class="hero__title reveal">
+              Hi, I'm <span class="highlight">Coder Dav</span><br />
+              I design &amp; build<br />
+              <span class="typed-wrap"><span class="typed" id="typed">digital experiences</span><span class="caret">|</span></span>
+            </h1>
+
+            <p class="hero__lead reveal">
+              A <strong>Frontend Web Developer</strong>, <strong>UI/UX Designer</strong> and
+              <strong>Graphic Designer</strong> based in Tanzania. I turn ideas into clean,
+              fast and beautiful interfaces — from the first sketch in Figma to the final
+              line of React.
+            </p>
+
+            <div class="hero__cta reveal">
+              <a href="#work" class="btn btn--primary magnetic">
+                View My Work <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn--ghost magnetic">
+                Let's Talk <i class="fa-regular fa-paper-plane"></i>
+              </a>
+            </div>
+
+            <ul class="hero__socials reveal" aria-label="Social links">
+              <li><a href="#" data-social="github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="#" data-social="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#" data-social="behance" aria-label="Behance"><i class="fa-brands fa-behance"></i></a></li>
+              <li><a href="#" data-social="dribbble" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a></li>
+              <li><a href="#" data-social="instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="portrait">
+              <div class="portrait__ring" aria-hidden="true"></div>
+              <div class="portrait__frame">
+                <img src="assets/profile.jpg" alt="Portrait of Coder Dav" />
+              </div>
+
+              <div class="float-badge float-badge--1">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="float-badge float-badge--2">
+                <i class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="float-badge float-badge--3">
+                <span class="ps-icon">Ps</span>
+                <span>Photoshop</span>
+              </div>
+              <div class="float-card">
+                <span class="float-card__code">&lt;/&gt;</span>
+                <div>
+                  <strong>Design + Code</strong>
+                  <small>One person, full pipeline</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ================= MARQUEE ================= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i>
+          <span>React</span><i>✦</i><span>Figma</span><i>✦</i><span>Photoshop</span><i>✦</i>
+          <span>UI Design</span><i>✦</i><span>UX Research</span><i>✦</i><span>Branding</span><i>✦</i>
+          <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i>
+          <span>React</span><i>✦</i><span>Figma</span><i>✦</i><span>Photoshop</span><i>✦</i>
+          <span>UI Design</span><i>✦</i><span>UX Research</span><i>✦</i><span>Branding</span><i>✦</i>
+        </div>
+      </div>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="section about" id="about">
+        <div class="container about__grid">
+          <div class="about__intro">
+            <p class="eyebrow reveal">01 — About me</p>
+            <h2 class="section__title reveal">
+              Designer's eye.<br />Developer's <span class="highlight">brain.</span>
+            </h2>
+          </div>
+
+          <div class="about__body">
+            <p class="reveal">
+              I'm <strong>Dav</strong>, a self-driven creative at the start of an exciting
+              journey. I sit right where design meets code — which means I don't just make
+              things look good, I make them <em>work</em> beautifully in the browser.
+            </p>
+            <p class="reveal">
+              I design user-centred interfaces in <strong>Figma</strong>, craft visuals and
+              brand assets in <strong>Adobe Photoshop</strong>, and bring them to life with
+              semantic <strong>HTML5</strong>, modern <strong>CSS3</strong>,
+              <strong>JavaScript</strong> and <strong>React</strong>. Every project is a
+              chance for me to learn something new and push my craft further.
+            </p>
+            <p class="reveal">
+              I'm looking for my first real-world opportunities — freelance projects,
+              internships or a junior role — where I can add value, learn from great people
+              and grow fast.
+            </p>
+
+            <div class="about__facts reveal">
+              <div class="fact">
+                <span class="fact__num">3</span>
+                <span class="fact__label">Creative disciplines</span>
+              </div>
+              <div class="fact">
+                <span class="fact__num">6</span>
+                <span class="fact__label">Core tools &amp; languages</span>
+              </div>
+              <div class="fact">
+                <span class="fact__num">∞</span>
+                <span class="fact__label">Curiosity to learn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow reveal">02 — What I do</p>
+            <h2 class="section__title reveal">Services I <span class="highlight">offer</span></h2>
+            <p class="section__sub reveal">
+              Three skill sets, one goal: products that look great, feel intuitive and work
+              flawlessly.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="service-card reveal tilt">
+              <div class="service-card__icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Frontend Development</h3>
+              <p>
+                Responsive, accessible and fast websites and web apps built with clean,
+                maintainable code.
+              </p>
+              <ul class="check-list">
+                <li>Responsive landing pages</li>
+                <li>React single-page apps</li>
+                <li>Interactive UI with JavaScript</li>
+                <li>Figma → pixel-perfect code</li>
+              </ul>
+              <span class="service-card__num">01</span>
+            </article>
+
+            <article class="service-card reveal tilt">
+              <div class="service-card__icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h3>UI / UX Design</h3>
+              <p>
+                Thoughtful, user-centred interfaces that are simple to use and delightful to
+                look at.
+              </p>
+              <ul class="check-list">
+                <li>Wireframes &amp; user flows</li>
+                <li>High-fidelity UI in Figma</li>
+                <li>Interactive prototypes</li>
+                <li>Mobile &amp; web app design</li>
+              </ul>
+              <span class="service-card__num">02</span>
+            </article>
+
+            <article class="service-card reveal tilt">
+              <div class="service-card__icon"><i class="fa-solid fa-palette"></i></div>
+              <h3>Graphic Design</h3>
+              <p>
+                Bold visuals that communicate clearly and make brands memorable online and
+                offline.
+              </p>
+              <ul class="check-list">
+                <li>Social media graphics</li>
+                <li>Posters &amp; flyers</li>
+                <li>Logo &amp; brand identity</li>
+                <li>Photo editing &amp; manipulation</li>
+              </ul>
+              <span class="service-card__num">03</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="section skills" id="skills">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow reveal">03 — Toolbox</p>
+            <h2 class="section__title reveal">Skills &amp; <span class="highlight">tools</span></h2>
+            <p class="section__sub reveal">The stack I use every day to design and ship.</p>
+          </div>
+
+          <div class="skills__layout">
+            <div class="skills__group reveal">
+              <h3 class="skills__label"><i class="fa-solid fa-terminal"></i> Development</h3>
+              <div class="skills__grid">
+                <div class="skill" style="--c: #e34f26">
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML5</span>
+                  <small>Semantic, accessible markup</small>
+                </div>
+                <div class="skill" style="--c: #2965f1">
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <span>CSS3</span>
+                  <small>Flexbox, Grid, animations</small>
+                </div>
+                <div class="skill" style="--c: #f7df1e">
+                  <i class="fa-brands fa-js"></i>
+                  <span>JavaScript</span>
+                  <small>ES6+, DOM, APIs</small>
+                </div>
+                <div class="skill" style="--c: #61dafb">
+                  <i class="fa-brands fa-react"></i>
+                  <span>React</span>
+                  <small>Components, hooks, state</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__group reveal">
+              <h3 class="skills__label"><i class="fa-solid fa-wand-magic-sparkles"></i> Design</h3>
+              <div class="skills__grid skills__grid--2">
+                <div class="skill" style="--c: #a259ff">
+                  <i class="fa-brands fa-figma"></i>
+                  <span>Figma</span>
+                  <small>UI, prototyping, design systems</small>
+                </div>
+                <div class="skill" style="--c: #31a8ff">
+                  <span class="ps-icon ps-icon--lg">Ps</span>
+                  <span>Photoshop</span>
+                  <small>Graphics, retouching, compositing</small>
+                </div>
+              </div>
+
+              <h3 class="skills__label skills__label--mt"><i class="fa-solid fa-brain"></i> Soft skills</h3>
+              <div class="tags">
+                <span>Problem solving</span>
+                <span>Attention to detail</span>
+                <span>Fast learner</span>
+                <span>Communication</span>
+                <span>Responsive design</span>
+                <span>Git &amp; GitHub</span>
+                <span>Teamwork</span>
+                <span>Creativity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORK ================= -->
+      <section class="section work" id="work">
+        <div class="container">
+          <div class="section__head section__head--row">
+            <div>
+              <p class="eyebrow reveal">04 — Selected work</p>
+              <h2 class="section__title reveal">Projects &amp; <span class="highlight">concepts</span></h2>
+              <p class="section__sub reveal">
+                Personal and concept projects where I practise real-world problems end to end.
+                New work lands here regularly.
+              </p>
+            </div>
+
+            <div class="filters reveal" role="tablist" aria-label="Filter projects">
+              <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+              <button class="filter" data-filter="dev" role="tab" aria-selected="false">Development</button>
+              <button class="filter" data-filter="uiux" role="tab" aria-selected="false">UI/UX</button>
+              <button class="filter" data-filter="graphic" role="tab" aria-selected="false">Graphic</button>
+            </div>
+          </div>
+
+          <div class="work__grid" id="workGrid">
+            <!-- Project 1 -->
+            <article class="project reveal" data-category="dev uiux">
+              <div class="project__media mock mock--shop">
+                <div class="mock__browser">
+                  <div class="mock__bar"><i></i><i></i><i></i></div>
+                  <div class="mock__body">
+                    <div class="mock__hero"></div>
+                    <div class="mock__row">
+                      <div class="mock__card"></div><div class="mock__card"></div><div class="mock__card"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="badge badge--live">In progress</span>
+                  <span>Web App</span>
+                </div>
+                <h3>ShopEase — E-commerce Store</h3>
+                <p>
+                  A responsive online store with product filtering, a cart and a smooth
+                  checkout flow. Designed in Figma, built with React.
+                </p>
+                <ul class="stack">
+                  <li>React</li><li>CSS3</li><li>Figma</li>
+                </ul>
+                <div class="project__links">
+                  <a href="#" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                  <a href="#" aria-label="Source code"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project reveal" data-category="uiux">
+              <div class="project__media mock mock--app">
+                <div class="mock__phone">
+                  <div class="mock__notch"></div>
+                  <div class="mock__balance"></div>
+                  <div class="mock__chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="mock__list"><i></i><i></i><i></i></div>
+                </div>
+                <div class="mock__phone mock__phone--back"></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="badge">Concept</span>
+                  <span>Mobile UI/UX</span>
+                </div>
+                <h3>PesaFlow — Finance App</h3>
+                <p>
+                  A mobile money &amp; budgeting app concept focused on clarity: quick
+                  transfers, spending insights and a calm, trustworthy visual language.
+                </p>
+                <ul class="stack">
+                  <li>Figma</li><li>Prototyping</li><li>User flows</li>
+                </ul>
+                <div class="project__links">
+                  <a href="#" aria-label="View case study"><i class="fa-brands fa-figma"></i> Prototype</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project reveal" data-category="dev">
+              <div class="project__media mock mock--weather">
+                <div class="mock__weather">
+                  <div class="mock__sun"></div>
+                  <div class="mock__temp">28°</div>
+                  <div class="mock__days"><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="badge">Practice</span>
+                  <span>Web App</span>
+                </div>
+                <h3>SkyCast — Weather Dashboard</h3>
+                <p>
+                  Search any city and get live weather and a 5-day forecast using a public
+                  API, with dynamic backgrounds that change with conditions.
+                </p>
+                <ul class="stack">
+                  <li>JavaScript</li><li>REST API</li><li>CSS3</li>
+                </ul>
+                <div class="project__links">
+                  <a href="#" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                  <a href="#" aria-label="Source code"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project reveal" data-category="graphic">
+              <div class="project__media mock mock--brand">
+                <div class="mock__brand">
+                  <div class="mock__logo">K</div>
+                  <div class="mock__swatches"><i></i><i></i><i></i><i></i></div>
+                  <div class="mock__cup"></div>
+                </div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="badge">Concept</span>
+                  <span>Branding</span>
+                </div>
+                <h3>Kahawa — Coffee Brand Identity</h3>
+                <p>
+                  Logo, colour palette, typography and packaging mockups for a Tanzanian
+                  specialty coffee brand inspired by Kilimanjaro.
+                </p>
+                <ul class="stack">
+                  <li>Photoshop</li><li>Branding</li><li>Mockups</li>
+                </ul>
+                <div class="project__links">
+                  <a href="#" aria-label="View on Behance"><i class="fa-brands fa-behance"></i> Behance</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project reveal" data-category="graphic">
+              <div class="project__media mock mock--poster">
+                <div class="mock__poster mock__poster--a"><b>BEAT</b><span>FEST '26</span></div>
+                <div class="mock__poster mock__poster--b"><b>ART</b><span>WEEK</span></div>
+                <div class="mock__poster mock__poster--c"><b>TECH</b><span>TALK</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="badge">Practice</span>
+                  <span>Graphic Design</span>
+                </div>
+                <h3>Event Poster Series</h3>
+                <p>
+                  A set of bold event posters and social media banners exploring typography,
+                  colour and photo manipulation.
+                </p>
+                <ul class="stack">
+                  <li>Photoshop</li><li>Typography</li><li>Social media</li>
+                </ul>
+                <div class="project__links">
+                  <a href="#" aria-label="View on Instagram"><i class="fa-brands fa-instagram"></i> Gallery</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project reveal" data-category="dev uiux">
+              <div class="project__media mock mock--tasks">
+                <div class="mock__kanban">
+                  <div class="mock__col"><i></i><i></i><i></i></div>
+                  <div class="mock__col"><i></i><i></i></div>
+                  <div class="mock__col"><i></i></div>
+                </div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="badge">Practice</span>
+                  <span>React App</span>
+                </div>
+                <h3>TaskFlow — Productivity Board</h3>
+                <p>
+                  A drag-and-drop task board with local storage, filters and dark mode —
+                  designed for focus and built with React hooks.
+                </p>
+                <ul class="stack">
+                  <li>React</li><li>Hooks</li><li>LocalStorage</li>
+                </ul>
+                <div class="project__links">
+                  <a href="#" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                  <a href="#" aria-label="Source code"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="work__more reveal">
+            <p>Have a project in mind? I'd love to make it my next case study.</p>
+            <a href="#contact" class="btn btn--primary magnetic">Start a project <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROCESS ================= -->
+      <section class="section process" id="process">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow reveal">05 — How I work</p>
+            <h2 class="section__title reveal">My design-to-code <span class="highlight">process</span></h2>
+          </div>
+
+          <ol class="process__list">
+            <li class="step reveal">
+              <span class="step__num">01</span>
+              <div class="step__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <h3>Discover</h3>
+              <p>Understand your goals, your users and the problem we're solving.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step__num">02</span>
+              <div class="step__icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h3>Wireframe</h3>
+              <p>Map user flows and structure the layout before adding any colour.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step__num">03</span>
+              <div class="step__icon"><i class="fa-brands fa-figma"></i></div>
+              <h3>Design</h3>
+              <p>Craft high-fidelity UI and visuals in Figma &amp; Photoshop, then refine with feedback.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step__num">04</span>
+              <div class="step__icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Develop</h3>
+              <p>Build it with HTML, CSS, JavaScript and React — responsive and accessible.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step__num">05</span>
+              <div class="step__icon"><i class="fa-solid fa-rocket"></i></div>
+              <h3>Launch</h3>
+              <p>Test across devices, polish the details and ship it to the world.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= JOURNEY ================= -->
+      <section class="section journey" id="journey">
+        <div class="container journey__grid">
+          <div>
+            <p class="eyebrow reveal">06 — My journey</p>
+            <h2 class="section__title reveal">Learning out <span class="highlight">loud</span></h2>
+            <p class="section__sub reveal">
+              Every expert was once a beginner. Here's how my path has unfolded so far — and
+              it's only getting started.
+            </p>
+
+            <div class="why reveal">
+              <h3>Why work with me?</h3>
+              <ul class="check-list">
+                <li>I can design <em>and</em> build — no gap between mockup and website</li>
+                <li>Fresh eyes, modern tools and lots of energy</li>
+                <li>Clear communication and regular progress updates</li>
+                <li>I care about every pixel and every user</li>
+              </ul>
+            </div>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item reveal">
+              <span class="timeline__tag">Step 1</span>
+              <h3>Fell in love with the web</h3>
+              <p>Started with HTML5 &amp; CSS3 — building my first pages and learning layout with Flexbox and Grid.</p>
+            </li>
+            <li class="timeline__item reveal">
+              <span class="timeline__tag">Step 2</span>
+              <h3>Made it interactive</h3>
+              <p>Learned JavaScript: the DOM, events, APIs and how to make interfaces come alive.</p>
+            </li>
+            <li class="timeline__item reveal">
+              <span class="timeline__tag">Step 3</span>
+              <h3>Discovered design</h3>
+              <p>Picked up Figma and Photoshop to design interfaces, graphics and brand visuals.</p>
+            </li>
+            <li class="timeline__item reveal">
+              <span class="timeline__tag">Step 4</span>
+              <h3>Leveled up with React</h3>
+              <p>Building component-based apps with React, hooks and reusable UI.</p>
+            </li>
+            <li class="timeline__item timeline__item--now reveal">
+              <span class="timeline__tag">Now</span>
+              <h3>Ready for real projects</h3>
+              <p>Building my portfolio and looking for clients, internships and teams to grow with.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= CTA BANNER ================= -->
+      <section class="cta-banner">
+        <div class="container">
+          <div class="cta-banner__inner reveal">
+            <h2>Let's build something <span>amazing</span> together.</h2>
+            <a href="#contact" class="btn btn--dark magnetic">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section contact" id="contact">
+        <div class="container contact__grid">
+          <div class="contact__info">
+            <p class="eyebrow reveal">07 — Contact</p>
+            <h2 class="section__title reveal">Got an idea?<br /><span class="highlight">Let's talk.</span></h2>
+            <p class="section__sub reveal">
+              Whether it's a website, an app design or a brand refresh — send me a message and
+              I'll get back to you within 24 hours.
+            </p>
+
+            <ul class="contact__list reveal">
+              <li>
+                <span class="contact__icon"><i class="fa-regular fa-envelope"></i></span>
+                <div>
+                  <small>Email</small>
+                  <a href="#" id="emailLink">goweledr25@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                <div>
+                  <small>WhatsApp</small>
+                  <a href="#" id="whatsappLink">+255 622 857 649</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <small>Location</small>
+                  <span>Tanzania · Open to remote work worldwide</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " required />
+              <label for="name">Your name</label>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " required />
+              <label for="email">Your email</label>
+            </div>
+            <div class="field">
+              <select id="service" name="service" required>
+                <option value="" disabled selected hidden></option>
+                <option>Frontend Development</option>
+                <option>UI/UX Design</option>
+                <option>Graphic Design</option>
+                <option>Something else</option>
+              </select>
+              <label for="service">What do you need?</label>
+            </div>
+            <div class="field">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Tell me about your project</label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block magnetic">
+              Send Message <i class="fa-regular fa-paper-plane"></i>
+            </button>
+            <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#home" class="logo">
+          <span class="logo__mark">D</span>
+          <span class="logo__text">coder<span>.dav</span></span>
+        </a>
+        <p>© <span id="year"></span> Coder Dav. Designed &amp; built with ♥ in Tanzania.</p>
+        <a href="#home" class="icon-btn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
