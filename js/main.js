@@ -13,7 +13,7 @@ const CONFIG = {
     linkedin: "https://www.linkedin.com/in/david-gowele-92928b338/",
     behance: "",
     dribbble: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/goweledr/",
   },
   roles: [
     "digital experiences",
