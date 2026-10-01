@@ -10,7 +10,7 @@ const CONFIG = {
   socials: {
     // Leave a link empty ("") to hide that icon
     github: "https://github.com/GoweleDr",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/david-gowele-92928b338/",
     behance: "",
     dribbble: "",
     instagram: "",
