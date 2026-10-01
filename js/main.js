@@ -8,11 +8,12 @@ const CONFIG = {
   whatsapp: "255622857649", // country code + number, no "+" or spaces
   whatsappDisplay: "+255 622 857 649",
   socials: {
-    github: "https://github.com/your-username",
-    linkedin: "https://linkedin.com/in/your-username",
-    behance: "https://behance.net/your-username",
-    dribbble: "https://dribbble.com/your-username",
-    instagram: "https://instagram.com/your-username",
+    // Leave a link empty ("") to hide that icon
+    github: "https://github.com/GoweleDr",
+    linkedin: "",
+    behance: "",
+    dribbble: "",
+    instagram: "",
   },
   roles: [
     "digital experiences",
@@ -45,6 +46,8 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
       a.href = url;
       a.target = "_blank";
       a.rel = "noopener";
+    } else {
+      a.closest("li").remove();
     }
   });
 
