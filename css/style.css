@@ -2175,3 +2175,25 @@ body {
 .hero__title .highlight {
   white-space: nowrap;
 }
+
+/* ---------- Four services + IT skills group ---------- */
+.services__grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skills__group--wide {
+  grid-column: 1 / -1;
+}
+
+.skills__grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+  .skills__grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

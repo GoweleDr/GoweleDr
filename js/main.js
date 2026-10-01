@@ -21,6 +21,7 @@ const CONFIG = {
     "UI/UX that converts",
     "bold brand visuals",
     "responsive websites",
+    "reliable IT systems",
   ],
 };
 
